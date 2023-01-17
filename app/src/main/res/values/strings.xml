@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AlarmManagerProject</string>
+    <string name="time">time</string>
+    <string name="message">message</string>
+    <string name="scheduler">Scheduler</string>
+    <string name="cancel">Cancel</string>
 </resources>

@@ -4,15 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="16dp"
+    tools:context=".presentation.screen.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:hint="@string/time"
+        android:inputType="number"
+        android:typeface="serif"
+        android:paddingHorizontal="8dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:hint="@string/message"
+        android:typeface="serif"
+        android:inputType="text"
+        android:paddingHorizontal="8dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/etTime" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnScheduler"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:background="#2175F4"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:text="@string/scheduler"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:paddingHorizontal="8dp"
+        android:layout_marginTop="32dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/etMessage" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:background="#2175F4"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:text="@string/cancel"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/etMessage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
